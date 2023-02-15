@@ -13,7 +13,7 @@ Arguments:
   outputDir     output directory (default: ".")
 
 Options:
-  -i, --images  export images
+  --images      export sorted images
   -h, --help    display help for command`;
 
 if (args.includes("-h") || args.includes("--help")) {
@@ -21,7 +21,7 @@ if (args.includes("-h") || args.includes("--help")) {
 } else if (!mobiFile) {
   console.warn("Missing .mobi source path argument!");
   console.log(help);
-} else if (args.includes("-i") || args.includes("--images")) {
+} else if (args.includes("--images")) {
   exportImages(mobiFile, outputDir);
 } else {
   unpack(mobiFile, outputDir);

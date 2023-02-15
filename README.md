@@ -27,7 +27,7 @@ Arguments:
   outputDir     output directory (default: ".")
 
 Options:
-  -i, --images  export images
+  --images      export sorted images
 ```
 
 ## Development

@@ -9,7 +9,7 @@ export declare function unpack(
 ): PromiseWithChild<{ stdout: string; stderr: string }>;
 
 /**
- * export images from a .mobi file
+ * export sorted images from a .mobi file
  */
 export declare function exportImages(
   mobiFile: string,
