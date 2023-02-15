@@ -1,0 +1,39 @@
+{
+  "name": "mobiunpack",
+  "version": "1.0.0",
+  "description": "Simple Node.js wrapper of mobiunpack to unpack or export images from .mobi files.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "./index.d.ts",
+  "main": "./index.js",
+  "bin": "./cli.js",
+  "keywords": [
+    "mobi",
+    "ebook",
+    "extract",
+    "export",
+    "image",
+    "cli"
+  ],
+  "author": "ssnangua",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssnangua/node-mobiunpack"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "mobiunpack.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  }
+}
