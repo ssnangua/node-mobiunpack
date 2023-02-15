@@ -1,6 +1,6 @@
 {
   "name": "mobiunpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Node.js wrapper of mobiunpack to unpack or export images from .mobi files.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
