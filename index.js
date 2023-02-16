@@ -6,7 +6,7 @@ const tmpdir = require("os").tmpdir();
 const cmd =
   process.platform === "win32"
     ? `"${path.join(__dirname, "dist/mobiunpack.exe")}"`
-    : `py ${path.join(__dirname, "mobiunpack.py")}`;
+    : `py "${path.join(__dirname, "mobiunpack.py")}"`;
 
 function unpack(mobiFile, outputDir = ".") {
   fs.mkdirSync(outputDir, { recursive: true });
