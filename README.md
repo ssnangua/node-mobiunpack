@@ -20,7 +20,7 @@ exportImages("test.mobi", "output/images");
 ## CLI
 
 ```bash
-Usage: mobiunpack <mobiFile> [outputDir] [options]
+Usage: mobiunpack <mobiFile> [outputDir] [--images]
 
 Arguments:
   mobiFile      path to .mobi file

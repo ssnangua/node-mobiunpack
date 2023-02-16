@@ -8,12 +8,12 @@ const cmd =
     ? `"${path.join(__dirname, "dist/mobiunpack.exe")}"`
     : `py ${path.join(__dirname, "mobiunpack.py")}`;
 
-function unpack(mobiFile, outputDir) {
+function unpack(mobiFile, outputDir = ".") {
   fs.mkdirSync(outputDir, { recursive: true });
   return exec(`${cmd} "${mobiFile}" "${outputDir}"`);
 }
 
-async function exportImages(mobiFile, outputDir) {
+async function exportImages(mobiFile, outputDir = ".") {
   const { name } = path.parse(mobiFile);
   const unpackDir = path.join(tmpdir, `mobiunpack-${name}`);
   await unpack(mobiFile, unpackDir);

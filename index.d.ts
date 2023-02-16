@@ -5,7 +5,7 @@ import { PromiseWithChild } from "child_process";
  */
 export declare function unpack(
   mobiFile: string,
-  outputDir: string
+  outputDir?: string
 ): PromiseWithChild<{ stdout: string; stderr: string }>;
 
 /**
@@ -13,5 +13,5 @@ export declare function unpack(
  */
 export declare function exportImages(
   mobiFile: string,
-  outputDir: string
+  outputDir?: string
 ): Promise<{ length: number }>;

@@ -4,7 +4,7 @@ const { unpack, exportImages } = require("./index.js");
 const args = process.argv.slice(2);
 const [mobiFile, outputDir = "."] = args;
 
-const help = `Usage: mobiunpack <mobiFile> [outputDir] [options]
+const help = `Usage: mobiunpack <mobiFile> [outputDir] [--images]
 
 Unpack a .mobi file, or export images from a .mobi file.
 
@@ -18,7 +18,8 @@ Options:
 
 if (args.includes("-h") || args.includes("--help")) {
   console.log(help);
-} else if (!mobiFile) {
+}
+if (!mobiFile) {
   console.warn("Missing .mobi source path argument!");
   console.log(help);
 } else if (args.includes("--images")) {
