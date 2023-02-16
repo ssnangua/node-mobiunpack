@@ -18,8 +18,7 @@ Options:
 
 if (args.includes("-h") || args.includes("--help")) {
   console.log(help);
-}
-if (!mobiFile) {
+} else if (!mobiFile) {
   console.warn("Missing .mobi source path argument!");
   console.log(help);
 } else if (args.includes("--images")) {
